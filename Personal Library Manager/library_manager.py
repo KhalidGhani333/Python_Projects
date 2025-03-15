@@ -37,7 +37,7 @@ elif menu == "➕ Add Book":
     with st.form("add_book_form"):
         title = st.text_input("📖 Title")
         author = st.text_input("✍️ Author")
-        year = st.number_input("📅 Year" ,min_value=1990 ,max_value=2024)
+        year = st.number_input("📅 Year" ,min_value=1990 ,max_value=2025)
         genre = st.text_input("🎭 Genre")
         read_status = st.checkbox("✅ Mark as Read")
         submit = st.form_submit_button("📥 Add Book")
