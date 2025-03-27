@@ -1,0 +1,19 @@
+
+# Ask the user for two numbers, one at a time, and then print the result of dividing the first number by the second and also the remainder of the division.
+# Here's a sample run of the program (user input is in bold italics):
+# Please enter an integer to be divided: 5
+# Please enter an integer to divide by: 3
+# The result of this division is 1 with a remainder of 2
+
+def main():
+    divide_num = int(input("Please enter an integer to be divided :"))
+    divide_by = int(input("Please enter an integer to be divide by :"))
+
+    divide = divide_num / divide_by
+    remainder = divide_num % divide_by
+
+    print(f"The result of this division is {divide} with a remainder of {remainder}")
+
+
+if __name__ == "__main__":
+    main()

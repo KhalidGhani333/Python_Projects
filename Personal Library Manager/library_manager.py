@@ -4,11 +4,11 @@ import json  # Use as a database to store books data
 # Load and save library data
 FILENAME = "library.json"
 
-def load_library():
+def load_library():                       # Reads the library.json file.
     try:
         with open(FILENAME, "r") as file:  # Read as a file
-            return json.load(file)  # Load a file
-    except FileNotFoundError:
+            return json.load(file)         # If the file exists, it reads and returns the stored books.
+    except :                               # FileNotFoundError
         return []
 
 def save_library(library):
