@@ -11,8 +11,8 @@ def load_library():                       # Reads the library.json file.
     except :                               # FileNotFoundError
         return []
 
-def save_library(library):
-    with open(FILENAME, "w") as file:
+def save_library(library):                # save the books 
+    with open(FILENAME, "w") as file:     # Rewrite the json file
         json.dump(library, file, indent=4)
 
 # Load the existing library data
@@ -23,6 +23,7 @@ st.set_page_config(page_title="Personal Library Manager", page_icon="📚", layo
 st.title("📚 Personal Library Manager")
 st.markdown("---")
 
+# sidebar menu
 menu = st.sidebar.radio("📌 Select an option", ["➕ Add Book","📖 View Library", "❌ Remove Book", "🔍 Search Book", "📊 Library Statistics"])
 
 if menu == "📖 View Library":
