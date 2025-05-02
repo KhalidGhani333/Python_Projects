@@ -17,6 +17,8 @@ This repository consists of various **assignments** and **projects**, designed t
 - 🔑 **Password Strength Meter**  
 - 📚 **Personal Library Manager**
 - 🧾 **Assignment_4**
+- 🔑**Secure Data Encryption System Using Streamlit**
+- 🔗**Build_Compose_and_Decorate_A_Complete_Traditional_OOP_Practice_Series**
  
 
 
